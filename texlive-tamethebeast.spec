@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tamethebeast.doc.
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 An (as-complete-as-possible) manual about bibliographies in
@@ -38,7 +36,6 @@ LaTeX, and thus mainly about BibTeX.
 %doc %{_texmfdistdir}/doc/bibtex/tamethebeast/ttb_en.sec5.tex
 %doc %{_texmfdistdir}/doc/bibtex/tamethebeast/ttb_en.tex
 %doc %{_texmfdistdir}/doc/bibtex/tamethebeast/ttb_style.sty
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -49,5 +46,3 @@ LaTeX, and thus mainly about BibTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
