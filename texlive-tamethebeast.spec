@@ -6,7 +6,7 @@
 # catalog-version 1.4
 Name:		texlive-tamethebeast
 Version:	1.4
-Release:	9
+Release:	10
 Summary:	A manual about bibliographies and especially BibTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/bibtex/tamethebeast
